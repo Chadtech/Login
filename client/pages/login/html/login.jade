@@ -1,0 +1,17 @@
+html
+  head
+    meta(charset='utf-8')
+    link(rel='stylesheet', href='/app.css')
+    title Log In
+  body
+    div.content#content
+      p.point Log In
+      input.input#loginUsername(placeholder='username')
+      input.input#loginPassword(placeholder='password', type='password')
+      input.submit#loginSubmit(type='submit', value='Submit')
+      p.point Register
+      input.input#registerUsername(placeholder='username')
+      input.input#registerPassword(placeholder='password', type='password')
+      input.submit#registerSubmit(type='submit', value='Submit')
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js')
+    script(src='/login/js/login.js')

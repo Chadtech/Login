@@ -1,0 +1,72 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: CtCommandPrompt;
+  src: url("Command-Prompt-12x16.ttf");
+}
+body {
+  background: #000;
+}
+.content {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 25%;
+  margin-bottom: 25%;
+  padding: 1em;
+  width: 50%;
+  border: 2px solid #c0c0c0;
+  transition: all 1s;
+}
+.content .indent {
+  margin-left: 50px;
+}
+.content .spacer {
+  height: 1em;
+}
+.content .point {
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  font-family: CtCommandPrompt;
+  font-size: 1em;
+  color: #c0c0c0;
+  line-height: 120%;
+}
+.content .input {
+  transition: all 0.5s;
+  margin-right: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  font-family: CtCommandPrompt;
+  font-size: 1em;
+  color: #c0c0c0;
+  line-height: 120%;
+  background: #404040;
+  border: none;
+  outline: none;
+}
+.content .input.problem {
+  background: #f23d21;
+}
+.content .input.success {
+  background: #0aca1a;
+  color: #000;
+}
+.content .submit {
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  font-family: CtCommandPrompt;
+  font-size: 1em;
+  color: #404040;
+  line-height: 120%;
+  background: #c0c0c0;
+  border: none;
+  outline: none;
+}

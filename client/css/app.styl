@@ -1,0 +1,62 @@
+*, *:before, *:after
+  margin 0
+  padding 0
+  -webkit-box-sizing border-box
+  box-sizing border-box
+
+@font-face
+  font-family CtCommandPrompt
+  src url('Command-Prompt-12x16.ttf')
+  
+specifyFont(inputColor)
+  font-smooth never
+  -webkit-font-smoothing none
+  font-family CtCommandPrompt
+  font-size 1em
+  color inputColor
+  line-height 120%
+  
+inputBasics()
+  border none
+  outline none
+  
+body
+  background #000000
+
+.content
+  margin-left 25%
+  margin-right 25%
+  margin-top 25%
+  margin-bottom 25%
+  padding 1em
+  width 50%
+  border 2px solid #c0c0c0
+  transition all 1s
+  
+  .indent
+    margin-left 50px
+    
+  .spacer
+    height 1em
+    
+  .point
+    specifyFont(rgba(192, 192, 192, 1))
+    
+  .input
+    transition all 0.5s
+    margin-right 1em
+    padding-left 1em
+    padding-right 1em
+    specifyFont(rgba(192, 192, 192, 1))
+    background rgba(64, 64, 64, 1)
+    inputBasics()
+    &.problem
+      background #f23d21
+    &.success
+      background #0aca1a
+      color rgba(0, 0, 0, 1)
+    
+  .submit
+    specifyFont(rgba(64, 64, 64, 1))
+    background rgba(192, 192, 192, 1)
+    inputBasics()

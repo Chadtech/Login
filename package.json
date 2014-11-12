@@ -1,0 +1,11 @@
+{
+  "name": "Login1",
+  "version": "0.0.0",
+  "description": "Practice Creating a Login Screen",
+  "main": "login.js",
+  "scripts": {
+    "test": "(????)"
+  },
+  "author": "Chadtech",
+  "license": "Ct License"
+}
